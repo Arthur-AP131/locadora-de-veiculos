@@ -33,6 +33,7 @@ h1{
     font-size: 20;
     margin: 10;
     margin-left: 10px;
+    justify-self: center;
 }
 
 p{
