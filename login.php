@@ -5,7 +5,7 @@ include 'db.php';
 $a = $_POST['usuario'];//Para evitar o sql injection x' or 1=1 or 'x'
 $b = $_POST['senha'];
  
-$query = "SELECT*FROM USUARIOS WHERE USUARIO_LOGIN = '$a' and SENHA = '$b'";
+$query = "SELECT*FROM USUARIO WHERE USUARIO_LOGIN = '$a' and SENHA = '$b'";
  
 $consulta = mysqli_query($conexao, $query);
  

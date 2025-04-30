@@ -13,6 +13,36 @@ nav{
     display: flex;
     width: 100%;
 }
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+td{
+    text-align: center;
+}
+
+h1{
+    font-size: 20;
+    margin: 10;
+    margin-left: 10px;
+    justify-self: center;
+}
+
+p{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+h2{
+    font-size: 23px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
 .header{
     display: flex;
     width: 100%;
@@ -29,18 +59,6 @@ nav{
 
 }
 
-h1{
-    font-size: 20;
-    margin: 10;
-    margin-left: 10px;
-    justify-self: center;
-}
-
-p{
-    font-size: 25px;
-    margin-top: 30px;
-    margin-left: 10px;
-}
 
 .botao{
     border: none;
@@ -48,6 +66,9 @@ p{
     padding: 7px 20px;
     background-color: #04AA6D;
     color: white;
+    border-radius: 30px;
+    justify-self: baseline;
+
 }
 
 .botao:hover{
@@ -63,9 +84,7 @@ p{
     border-bottom: 2px solid #028f4b;
 }
 
-td{
-    text-align: center;
-}
+
 .formdesc{
     display: flex;
     justify-content: center;
@@ -83,42 +102,63 @@ td{
     width: 50%;
 }
 
-h2{
-    font-size: 23px;
-    font-weight: 400;
-    margin-left: 20px;
-}
-
-.cad_login{
+.div_form_log{
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-items: center;
     background-color: #c4ffc5;
-    padding: 30px;
-    border-radius: 15px;
+    border-radius: 35px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 20%;
+    height: 42%;
 }
 
-form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.form_log{
+    width: 75%;
 }
 
 .titulo{
     justify-self: center;
     margin: 20px;
+    color:#028f4b;
 }
 
-.fundo-cad{
+.fundo_log{
     width: 100vw;
     height: 100vh;
     background-image:url(img/fundo2.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.inp_log{
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #028f4b;
+    background-color: #c4ffc5;
+    width: 100%;
+
+}
+
+.inp_log:focus{
+    outline: 0;
+}
+
+.inp_log::placeholder{
+    color:#028f4b;
+    text-align: left;
+}
+
+.alert_log{
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 0;
+    color: red;
+    
 }
