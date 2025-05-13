@@ -7,21 +7,21 @@
  	        <br><br>
  	        
  	        <input type="password" name="senha" placeholder="Senha" class='inp_log'>
+			<p class= "erro">
+				 <?php if (isset($_GET['erro'])){ ?>
 
-			 <?php if (isset($_GET['erro'])){ ?>
-			<br>
+ 	        	<div class="alert_log" role="alert">
+ 		    	Usuário e/ou senha inválido(s).
+ 	        	</div>
 
- 	        <div class="alert_log" role="alert">
- 		    Usuário e/ou senha inválido(s).
- 	        </div>
-
-			 <?php }?>
-			 <br><br>
+			 	<?php }?>
+			</p> 
+				<br>
 
  	        <input type="submit" value="Entrar" class="botao">
 
         </form>
-        <br>
+        
     </div>
  </div>
   
