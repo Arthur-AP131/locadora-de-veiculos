@@ -12,12 +12,29 @@
   
   <nav>
     <div class='logo'>
-    <a href="index.php"><img src="img/logo.png" alt="" class="logo-img">
+    <b><a href="index.php"><img src="img/logo.png" alt="" class="logo-img">
     </div>
     <p class= 'logo_texto'>
     risa Car
     </p>
-    <div></a>
+    <div></a></b>
 
     </div>
+<header class="navbar">
+  <!-- Checkbox para controle -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+ 
+  <!-- Hambúrguer animado -->
+   <label for="menu-toggle" class="hamburger">&#9776;</label>
+ 
+  <!-- Sidebar lateral -->
+  <aside class="sidebar">
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+    </nav>
+  </aside>
+</header>
   </nav>

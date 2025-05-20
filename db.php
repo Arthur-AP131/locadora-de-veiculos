@@ -3,6 +3,6 @@
  $servidor = "localhost";
  $usuario = "root";
  $senha = "";
- $db = "veiculos";
+ $db = "locadora";
  
  $conexao = mysqli_connect($servidor, $usuario, $senha, $db);
