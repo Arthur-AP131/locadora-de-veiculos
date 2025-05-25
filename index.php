@@ -17,17 +17,18 @@ if(isset($_SESSION['login'])){//se existir um login
  		$pagina = $_GET['pagina'];
 	}
 	else{
-		$pagina = 'teste';
+		$pagina = 'home';
 	}
 }
  
 else{ 
-	$pagina = 'home';
+	$pagina = 'login';
 }
  
 switch ($pagina) {
-	case 'teste': include 'view/teste.php'; break;
-	default: include 'view/home.php'; 
+	case 'home': include 'view/home.php'; break;
+	case 'cadastro-de-veiculos': include 'cadastro-de-veiculos.php'; break;
+	default: include 'view/login.php'; 
 	break;
 }
 

@@ -1,24 +1,26 @@
 <?php
-include 'db.php';
+include 'db.php'; // Conexão com o banco de dados
+include 'header.php';
+
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style.css">
-    <title>Cadastro de Veículos</title>
+    <title>Cadastro</title>
 </head>
-<?php
-include "header.php";
-?>
+<body>
+    
+</body>
+</html>
 <body>
 
 <h1 class= formdesc>Cadastro de veículos</h1>
     <div class = 'formulario'>
    
-        <form method = 'post' action = 'processo.php' class = "form-cadastro">
+        <form method = 'post' action = 'processo-cad-veic.php' class = "form-cadastro">
             <h2 class="form-cad-title">Nome</h2>
             <input type = 'text' name = 'veiculo' placeholder = 'Digite o nome do veículo' class = 'campo-cadastroveic'>
             <h2 class="form-cad-title">Modelo</h2>
