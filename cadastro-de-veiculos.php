@@ -4,18 +4,6 @@ include 'header.php';
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-</head>
-<body>
-    
-</body>
-</html>
-<body>
 
 <h1 class= formdesc>Cadastro de veículos</h1>
     <div class = 'formulario'>
@@ -32,5 +20,3 @@ include 'header.php';
             <input type = 'submit' value = 'Cadastrar veículo' class = 'botao-cad'>
         </form>
     </div>
-</body>
-</html>
