@@ -10,28 +10,36 @@ if ($resultado) {
 }
 
 ?>
-
+<br><br>
 <div class="home-title">
     <h1>Home</h1>
     <input type="button" value="Cadastrar Veículo" class="botao" onclick="window.location.href='cadastro-de-veiculos.php'">
 </div>
-<br><br>
+<br><br><br>
 
 <div class= "div-card">
-    <div class="card">
-        <?php
-        if (isset($veiculos) && count($veiculos) > 0) {
-            foreach ($veiculos as $veiculo) {
-                echo "<div class='card'>";
-                echo "<h2>{$veiculo['nome_veiculo']}</h2>";
-                echo "<p>Modelo: {$veiculo['modelo_veiculo']}</p>";
-                echo "<p>Placa: {$veiculo['placa_veiculo']}</p>";
-                echo "<p>Valor Diário: {$veiculo['valor_diario']}</p>";
+
+    <?php
+    if (isset($veiculos) && count($veiculos) > 0) {
+        foreach ($veiculos as $veiculo) {
+            echo "<div class='card-veiculo'>";
+                echo "<div class = 'card-cima'>";
+                    echo "<h2>{$veiculo['nome_veiculo']}</h2>";
+                    echo "<p>Modelo: {$veiculo['modelo_veiculo']}</p>";
+                echo"</div>";
+
+                echo "<div class = 'card-baixo'>";
+                    echo "<p>Placa: {$veiculo['placa_veiculo']}</p>";
+                    echo "<p>Valor Diário: {$veiculo['valor_diario']}</p>";
+                    echo " <input type='button' value='Alugar Veículo' class='botao'>";
                 echo "</div>";
-            }
-        } else {
-            echo "<p>Nenhum veículo cadastrado.</p>";
+            echo "</div>";
         }
-        ?>
-    </div>
+    } else {
+        echo "<p>Nenhum veículo cadastrado.</p>";
+    }
+    ?>
+
 </div>
+
+<img src="" alt="">
