@@ -25,12 +25,12 @@ if ($resultado) {
             echo "<div class='card-veiculo'>";
                 echo "<div class = 'card-cima'>";
                     echo "<h2>{$veiculo['nome_veiculo']}</h2>";
-                    echo "<p>Modelo: {$veiculo['modelo_veiculo']}</p>";
+                    echo "<p class= 'card-modelo'>{$veiculo['modelo_veiculo']}</p>";
+                    echo "<p class = 'card-placa'>Placa: {$veiculo['placa_veiculo']}</p>";
                 echo"</div>";
 
                 echo "<div class = 'card-baixo'>";
-                    echo "<p>Placa: {$veiculo['placa_veiculo']}</p>";
-                    echo "<p>Valor Diário: {$veiculo['valor_diario']}</p>";
+                    echo "<p class = 'card-valor'>R$ {$veiculo['valor_diario']}/Dia</p>";
                     echo " <input type='button' value='Alugar Veículo' class='botao'>";
                 echo "</div>";
             echo "</div>";
