@@ -23,7 +23,11 @@
     <label for="menu-toggle" class="hamburger">&#9776;</label>
 
     <aside class="sidebar">
-      <a href="#">Início</a>
+      
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+      <a href="c:\xampp\htdocs\locadora-de-veiculos\index.php">Início</a>
       <a href="#">Sobre</a>
       <a href="#">Serviços</a>
       <a href="#">Contato</a>

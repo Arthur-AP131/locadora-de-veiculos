@@ -17,6 +17,8 @@ include 'header.php';
             <input type = 'text' name = 'placa' placeholder = 'Digite a placa'class = 'campo-cadastroveic'>
             <h2 class="form-cad-title">Preço</h2>
             <input type = 'number' name = 'prc_diario' placeholder = 'Digite o preço diário'class = 'campo-cadastroveic'>
+            <h2 class="form-cad-title">Imagem</h2>
+            <input type="file" accept="image/*" required>
             <input type = 'submit' value = 'Cadastrar veículo' class = 'botao-cad'>
         </form>
     </div>
