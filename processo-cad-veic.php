@@ -11,8 +11,4 @@ $query = "INSERT INTO VEICULOS (nome_veiculo, modelo_veiculo, placa_veiculo, val
 mysqli_query($conexao, $query);
 
 header('location:index.php');
-
-if ($_FILES['imagem']['error']==0){
-    $nome
-}
 ?>

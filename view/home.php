@@ -13,7 +13,7 @@ if ($resultado) {
 <br><br><br>
 <div class="home-title">
     <h1>Home</h1>
-    <input type="button" value="Cadastrar Veículo" class="botao" onclick="window.location.href='cadastro-de-veiculos.php'">
+    <input type="button" value="Cadastrar Veículo" class="botao-cad-home" onclick="window.location.href='cadastro-de-veiculos.php'">
 </div>
 <br><br><br>
 
@@ -31,7 +31,7 @@ if ($resultado) {
 
                 echo "<div class = 'card-baixo'>";
                     echo "<p class = 'card-valor'>R$ {$veiculo['valor_diario']}/Dia</p>";
-                    echo " <input type='button' value='Alugar Veículo' class='botao'>";
+                    echo " <input type='button' value='Alugar Veículo' class='botao-alugar'>";
                 echo "</div>";
             echo "</div>";
         }

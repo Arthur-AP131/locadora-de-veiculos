@@ -18,7 +18,7 @@
 			</p> 
 				<br>
 
- 	        <input type="submit" value="Entrar" class="botao">
+ 	        <input type="submit" value="Entrar" class="botao-login">
 
         </form>
         

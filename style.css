@@ -51,7 +51,7 @@ h2{
     display: flex;
 }
 
-.botao{
+.botao-login{
     border: none;
     border-radius: 3px;
     padding: 7px 20px;
@@ -62,15 +62,29 @@ h2{
     transition: background-color 0.1s ease-in;
 }
 
-.botao:hover{
+.botao-login:hover{
     cursor: pointer;
     background-color: #02915c;
 }
 
+.botao-alugar{
+    border: none;
+    border-radius: 3px;
+    padding: 7px 20px;
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 30px;
+    justify-self: baseline;
+    transition: background-color 0.1s ease-in;
+}
+
+.botao-alugar:hover{
+    cursor: pointer;
+    background-color: #02915c;
+}
 
 .botao-cad{
     border: none;
-    border-radius: 3px;
     padding: 7px 20px;
     background-color: #04AA6D;
     color: white;
@@ -83,6 +97,23 @@ h2{
 .botao-cad:hover{
     cursor: pointer;
     background-color: #02915c;
+}
+
+.botao-cad-home{
+    color: #fff;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #04AA6D 0%, #00cd60  51%, #02915c  100%);
+    box-shadow: 0 0 20px #eee;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+
+.botao-cad-home:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
 }
 
 .campo-cadastroveic{
@@ -116,6 +147,12 @@ h2{
     display: flex;
     flex-direction: column;
     width: 50%;
+}
+
+textarea:focus, input:focus, select:focus{
+    outline: none;
+    border: 0 none;
+    border-bottom: 2px solid #028f4b;
 }
 
 /*login*/
@@ -279,6 +316,7 @@ a {
     display: flex;
     align-items: center;
     gap: 30px;
+    margin-left: 20px;
     padding: 20px;
     width: 100vw;
     height: 350px;
