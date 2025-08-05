@@ -10,5 +10,10 @@ $query = "INSERT INTO VEICULOS (nome_veiculo, modelo_veiculo, placa_veiculo, val
 
 mysqli_query($conexao, $query);
 
-header('location:index.php');
+if (mysqli_query($conexao, $query)) {
+    echo "<p style='color: green;'>Veículo cadastrado com sucesso!</p>";
+    header("refresh:3; url=index.php"); // Redireciona em 2 segundos
+} else {
+    echo "<p style='color: red;'>Erro ao cadastrar: </p>";
+}
 ?>
