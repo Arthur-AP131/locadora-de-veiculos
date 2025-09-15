@@ -68,21 +68,8 @@ h2{
     background-color: #02915c;
 }
 
-.botao-alugar{
-    border: none;
-    border-radius: 3px;
-    padding: 7px 20px;
-    background-color: #04AA6D;
-    color: white;
-    border-radius: 30px;
-    justify-self: baseline;
-    transition: background-color 0.1s ease-in;
-}
 
-.botao-alugar:hover{
-    cursor: pointer;
-    background-color: #02915c;
-}
+
 
 .botao-cad{
     border: none;
@@ -370,4 +357,37 @@ a {
 
 .div-card::-webkit-scrollbar {
     scrollbar-color:#00bf63 ;
+}
+
+.botao-alugar{
+    border: none;
+    border-radius: 3px;
+    padding: 7px 20px;
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 30px;
+    justify-self: baseline;
+    transition: background-color 0.1s ease-in;
+}
+
+.botao-alugar:hover{
+    cursor: pointer;
+    background-color: #02915c;
+}
+
+.botao-deletar{
+    border: none;
+    border-radius: 3px;
+    padding: 7px 20px;
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 30px;
+    justify-self: baseline;
+    transition: background-color 0.1s ease-in;
+}
+
+.botao-deletar:hover{
+    cursor: pointer;
+    background-color: #c7030d;
+
 }

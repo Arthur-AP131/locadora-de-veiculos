@@ -31,7 +31,9 @@ if ($resultado) {
 
                 echo "<div class = 'card-baixo'>";
                     echo "<p class = 'card-valor'>R$ {$veiculo['valor_diario']}/Dia</p>";
-                    echo " <input type='button' value='Alugar Veículo' class='botao-alugar'>";
+                     echo " <input type='button' value='Alugar Veículo' class='botao-alugar'>";
+                     echo " <a href=processo-del-veic.php?ID={$veiculo['id_veiculo']}> <input type='button' value='Deletar' class='botao-deletar'> <a/>";
+                    echo " <a href=edita-veic.php?ID={$veiculo['id_veiculo']}> <input type='button' value='Editar' class='botao-alugar'> <a/>";
                 echo "</div>";
             echo "</div>";
         }
