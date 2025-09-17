@@ -12,7 +12,7 @@
  
   <nav>
   <div class="nav-left">
-    <a href="index.php" class="logo-wrapper">
+    <a href="/locadora-de-veiculos/index.php" class="logo-wrapper">
       <img src="/locadora-de-veiculos/img/logo.png" alt="Logo" class="logo-img">
       <p class="logo_texto">risaCar</p>
     </a>

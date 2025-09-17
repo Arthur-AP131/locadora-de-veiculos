@@ -14,6 +14,3 @@
 $query = 'SELECT * FROM VEICULOS' ;
 
 $consulta_veiculos = mysqli_query($conexao, $query);
-
-
- 

@@ -30,7 +30,7 @@ if ($resultado) {
                 echo"</div>";
 
                 echo "<div class = 'card-baixo'>";
-                     echo "<p class = 'card-valor'>R$ {$veiculo['valor_diario']}/Dia</p>";
+                     echo "<p class = 'card-valor'>R$ {$veiculo['valor_diario']}/dia</p>";
                      echo " <a href= view/aluga-veiculo.php?ID={$veiculo ['id_veiculo']}> <input type='button' value='Alugar Veículo' class='botao-alugar'> </a>";
                      echo " <a href=processo-del-veic.php?ID={$veiculo['id_veiculo']}> <input type='button' value='Deletar' class='botao-deletar'> </a>";
                      echo " <a href= view/edita-veic.php?ID={$veiculo['id_veiculo']}> <input type='button' value='Editar' class='botao-alugar'> </a>";

@@ -8,8 +8,9 @@ while ($veiculo = mysqli_fetch_array($consulta_veiculos)) {
 
     if($veiculo['id_veiculo'] == $sla2){
 			?>
-			<h1>Editar Veiculo</h1><br>
-			<form method="post" action="/locadora-de-veiculos/processo-edit-veic.php">
+			<h1 class = 'formdesc'>Editar Veiculo</h1><br>
+            <div class = 'formulario'>
+			<form method="post" action="/locadora-de-veiculos/processo-edit-veic.php" class = 'form-cadastro'>
 
 			<input type="hidden" name="id_veiculo"value="<?php echo $veiculo['id_veiculo']; ?>" required >
 
@@ -24,11 +25,7 @@ while ($veiculo = mysqli_fetch_array($consulta_veiculos)) {
 
             <h2 class="form-cad-title">Preço</h2>
             <input type='number'name='prc_diario_edit' placeholder='Digite o preço diário'class='campo-cadastroveic'value="<?php echo $veiculo['valor_diario']; ?>" required >
-
-            <h2 class="form-cad-title">Imagem</h2>
-            <input type="file" accept="image/*">
             
             <input type='submit' value = 'Editar veiculo' class = 'botao-cad'>
-			</form>
+    </div>
 		<?php }} ?>
-	
