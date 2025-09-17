@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BrisaCar</title>
     <link rel="shortcut icon" href="img/icon-brisacar.webp" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/locadora-de-veiculos/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
@@ -13,7 +13,7 @@
   <nav>
   <div class="nav-left">
     <a href="index.php" class="logo-wrapper">
-      <img src="img/logo.png" alt="Logo" class="logo-img">
+      <img src="/locadora-de-veiculos/img/logo.png" alt="Logo" class="logo-img">
       <p class="logo_texto">risaCar</p>
     </a>
   </div>

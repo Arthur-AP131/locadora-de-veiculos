@@ -1,7 +1,5 @@
 <?php
 include 'db.php'; // Conexão com o banco de dados
-
-$query = "SELECT * FROM veiculos";
 $resultado = $conexao->query($query);
 if ($resultado) {
     $veiculos = $resultado->fetch_all(MYSQLI_ASSOC);
@@ -13,7 +11,9 @@ if ($resultado) {
 <br><br><br>
 <div class="home-title">
     <h1>Home</h1>
-    <input type="button" value="Cadastrar Veículo" class="botao-cad-home" onclick="window.location.href='cadastro-de-veiculos.php'">
+    <a href="view/cadastro-de-veiculos.php">
+        <input type="button" value="Cadastrar Veículo" class="botao-cad-home">
+    </a>
 </div>
 <br><br><br>
 
@@ -30,10 +30,10 @@ if ($resultado) {
                 echo"</div>";
 
                 echo "<div class = 'card-baixo'>";
-                    echo "<p class = 'card-valor'>R$ {$veiculo['valor_diario']}/Dia</p>";
-                     echo " <input type='button' value='Alugar Veículo' class='botao-alugar'>";
-                     echo " <a href=processo-del-veic.php?ID={$veiculo['id_veiculo']}> <input type='button' value='Deletar' class='botao-deletar'> <a/>";
-                    echo " <a href=edita-veic.php?ID={$veiculo['id_veiculo']}> <input type='button' value='Editar' class='botao-alugar'> <a/>";
+                     echo "<p class = 'card-valor'>R$ {$veiculo['valor_diario']}/Dia</p>";
+                     echo " <a href= view/aluga-veiculo.php?ID={$veiculo ['id_veiculo']}> <input type='button' value='Alugar Veículo' class='botao-alugar'> </a>";
+                     echo " <a href=processo-del-veic.php?ID={$veiculo['id_veiculo']}> <input type='button' value='Deletar' class='botao-deletar'> </a>";
+                     echo " <a href= view/edita-veic.php?ID={$veiculo['id_veiculo']}> <input type='button' value='Editar' class='botao-alugar'> </a>";
                 echo "</div>";
             echo "</div>";
         }

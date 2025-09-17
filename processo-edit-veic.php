@@ -3,14 +3,14 @@
 include 'db.php';
 
 $id = $_POST['id_veiculo'];
-$veiculo = $_POST['veiculo'];
-$modelo = $_POST['modelo'];
-$placa = $_POST['placa'];
-$preco = $_POST['prc_diario'];
+$veiculo = $_POST['veiculo_edit'];
+$modelo = $_POST['modelo_edit'];
+$placa = $_POST['placa_edit'];
+$preco = $_POST['prc_diario_edit'];
 
 
-$query = "UPDATE VEICULOS SET nome_veiculo='$veiculo', modelo_veiculo='$modelo', placa_veiculo= '$placa', valor_diario='$preco' WHERE id = $id";
+$query_update = "UPDATE VEICULOS SET nome_veiculo='$veiculo', modelo_veiculo='$modelo', placa_veiculo= '$placa', valor_diario='$preco' WHERE id_veiculo = $id";
 
-mysqli_query($conexao, $query);
+mysqli_query($conexao, $query_update);
 
 header('location:index.php');

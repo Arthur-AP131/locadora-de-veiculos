@@ -7,10 +7,15 @@
     padding: 0;
 }
 
+a{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     margin: 0;
     overflow:auto;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 
@@ -96,6 +101,7 @@ h2{
     box-shadow: 0 0 20px #eee;
     transition: 0.5s;
     background-size: 200% auto;
+    height:60px;
 }
 
 .botao-cad-home:hover{
