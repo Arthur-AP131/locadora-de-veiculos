@@ -23,12 +23,20 @@ if ($resultado) {
     if (isset($veiculos) && count($veiculos) > 0) {
         foreach ($veiculos as $veiculo) {
             echo "<div class='card-veiculo'>";
-                echo "<div class = 'card-cima'>";
-                    echo "<h2>{$veiculo['nome_veiculo']}</h2>";
-                    echo "<p class= 'card-modelo'>{$veiculo['modelo_veiculo']}</p>";
-                    echo "<p class = 'card-placa'>Placa: {$veiculo['placa_veiculo']}</p>";
-                echo"</div>";
+                echo "<div class='card-topo'>";
+                    echo "<div class = 'card-info'>";
+                        echo "<h2>{$veiculo['nome_veiculo']}</h2>";
+                        echo "<p class= 'card-modelo'>{$veiculo['modelo_veiculo']}</p>";
+                        echo "<p class = 'card-placa'>Placa: {$veiculo['placa_veiculo']}</p>";
+                    echo"</div>";
 
+                    echo "<div class='card-imagem'>";
+                        $imagem_data = base64_encode($veiculo['imagem_veiculo']);
+                        echo "<img src='data:image/jpeg;base64,{$imagem_data}' alt='Imagem do Veículo' class='imagem-veiculo'>";
+                    echo "</div>";
+                echo "</div>";
+
+                
                 echo "<div class = 'card-baixo'>";
                      echo "<p class = 'card-valor'>R$ {$veiculo['valor_diario']}/dia</p>";
                      echo " <a href= view/aluga-veiculo.php?ID={$veiculo ['id_veiculo']}> <input type='button' value='Alugar Veículo' class='botao-alugar'> </a>";
@@ -44,4 +52,4 @@ if ($resultado) {
 
 </div>
 
-<img src="" alt="">
+<br><br><br>

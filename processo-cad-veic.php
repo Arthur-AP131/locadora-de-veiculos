@@ -5,16 +5,11 @@ $a = $_POST['veiculo'];
 $b = $_POST['modelo'];
 $c = $_POST['placa'];
 $d = $_POST['prc_diario'];
-$imagem_nome = $_FILES['imagem'];
 
-$upload_dir = 'uploads/';
-
-
-
-if(isset($_FILES[$imagem_bin])){
+if(isset($_FILES['imagem_edit']) && $_FILES['imagem_edit']['error'] === UPLOAD_ERR_OK){
 
     $imagem_tmp = $_FILES['imagem']['tmp_name'];
-    $imagem_bin = file_get_contents($imagem_tmp)
+    $imagem_bin = file_get_contents($imagem_tmp);
 
     $imagem_bin = mysqli_real_escape_string($conexao, $imagem_bin);
 

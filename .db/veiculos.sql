@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15/04/2025 às 14:28
--- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.2.4
+-- Tempo de geração: 23/09/2025 às 20:16
+-- Versão do servidor: 10.4.32-MariaDB
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,10 +29,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `veiculos` (
   `id_veiculo` int(4) NOT NULL,
-  `nome_veiculo` varchar(70) NOT NULL,
-  `modelo_veiculo` varchar(70) NOT NULL,
-  `placa_veiculo` char(7) NOT NULL,
-  `valor_diario` decimal(8,2) NOT NULL
+  `nome_veiculo` varchar(50) NOT NULL,
+  `modelo_veiculo` varchar(50) NOT NULL,
+  `placa_veiculo` varchar(7) NOT NULL,
+  `valor_diario` decimal(8,2) NOT NULL,
+  `imagem_veiculo` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -53,7 +54,7 @@ ALTER TABLE `veiculos`
 -- AUTO_INCREMENT de tabela `veiculos`
 --
 ALTER TABLE `veiculos`
-  MODIFY `id_veiculo` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_veiculo` int(4) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
